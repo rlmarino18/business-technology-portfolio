@@ -131,7 +131,7 @@ The portfolio should demonstrate understanding of:
 - auditability
 - governance
 
-This problem is addressed primarily through the **Agentic Workflow Guardrail Simulator**.
+This problem is explored across the portfolio through automation, human-review, governance, and control decisions rather than through a dedicated standalone agentic project.
 
 ---
 
@@ -599,7 +599,7 @@ Where applicable, projects should evaluate:
 | Workflow Opportunity & ROI Analyzer | Flagship | Demonstrate workflow diagnosis, technology-opportunity identification, prioritization, and ROI reasoning |
 | Document Q&A RAG Assistant | Flagship | Demonstrate retrieval quality, grounding, reranking, evidence evaluation, and launch-readiness decisions |
 | Executive Brief Generator | Flagship | Demonstrate AI workflow design, controlled evaluation, regression discipline, human-in-the-loop controls, and product promotion decisions |
-| Agentic Workflow Guardrail Simulator | Supporting | Demonstrate autonomy, governance, and human oversight |
+| Business Performance & Margin Improvement Diagnostic | Flagship | Demonstrate business-performance analysis, operating economics, KPI management, prioritization, and executive decision-making |
 
 
 ---
@@ -698,7 +698,7 @@ Primary learning questions:
 
 ---
 
-## Later — Build & Evaluate Advanced AI Systems
+## Later — Build & Evaluate Advanced Technology and Business Systems
 
 **Confidence: Medium**
 
@@ -722,7 +722,7 @@ Primary initiatives:
 
 - Document Q&A RAG Assistant
 - Executive Brief Generator
-- Agentic Workflow Guardrail Simulator
+- Business Performance & Margin Improvement Diagnostic
 
 Primary outcomes:
 
@@ -730,14 +730,14 @@ Primary outcomes:
 - understand RAG architecture
 - compare models and configurations
 - make launch-readiness decisions
-- reason about AI autonomy and governance
+- reason about automation boundaries, governance, and operating controls
 - understand production trade-offs
 
 Primary learning questions:
 
 - Is the system reliable enough to launch?
 - Which configuration best satisfies the requirements?
-- Where should human control remain?
+- Where should human judgment and control remain?
 - What happens when the system fails in production?
 
 ---
@@ -921,7 +921,7 @@ Evaluate structured extraction quality, grounding, ownership accuracy, decision-
 
 ---
 
-### Agentic Workflow Guardrail Simulator
+### Business Performance & Margin Improvement Diagnostic
 
 Assumption:
 

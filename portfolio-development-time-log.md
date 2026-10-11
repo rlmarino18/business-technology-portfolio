@@ -43,7 +43,7 @@ Multiple sessions may be completed on the same day, and gaps between sessions do
 | Document Q&A RAG Assistant | In Progress | 3.50 |
 | Executive Brief Generator | In Progress | 44.50 |
 | Support Triage System | In Progress | 7.33 |
-| Agentic Workflow Guardrail Simulator | Not Started | 0.0 |
+| Business Performance & Margin Improvement Diagnostic | Not Started | 0.0 |
 | **Total Portfolio Project Time** |  | **55.33** |
 
 > Portfolio project hours represent verified time invested in building, testing, evaluating, and documenting featured projects. Some projects began before the current structured session sequence; verified historical development time is included where an existing project time log is available.

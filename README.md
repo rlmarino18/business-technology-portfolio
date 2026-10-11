@@ -395,18 +395,19 @@ Current capabilities include:
 
 ---
 
-## 5. Agentic Workflow Guardrail Simulator
+## 5. Business Performance & Margin Improvement Diagnostic
 **Type:** Supporting  
 **Status:** Planned
 
-Explores agentic workflow design with emphasis on safe autonomy and operational controls.
+A business performance case study focused on operating economics, margin improvement, KPI management, prioritization, implementation risk, and executive decision-making.
 
 Focus areas include:
 
-- tool use
-- permissions
-- escalation
-- human-in-the-loop review
-- failure containment
-- governance
-- observability
+- financial and operating performance analysis
+- revenue and cost-driver analysis
+- margin-improvement scenarios
+- KPI design and management visibility
+- initiative prioritization
+- implementation cost and payback analysis
+- operational and regulatory risk assessment
+- executive recommendation
