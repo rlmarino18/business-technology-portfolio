@@ -63,7 +63,29 @@ This problem is addressed primarily through the **Workflow Opportunity & ROI Ana
 
 ---
 
-## 2. When Does Data or Machine Learning Add Value?
+## 2. How Should Management Improve Business Performance?
+
+Management must understand how the business makes money, where performance is constrained, which improvement levers are credible, and where investment will generate the strongest return.
+
+The portfolio should demonstrate the ability to:
+
+- understand the business model
+- identify revenue and cost drivers
+- establish financial and operating baselines
+- diagnose performance gaps
+- analyze operating economics
+- quantify improvement opportunities
+- model margin impact
+- estimate implementation cost and payback
+- define management KPIs
+- evaluate execution, customer, operational, and regulatory risk
+- prioritize competing investments
+- make an evidence-based executive recommendation
+
+This problem is addressed primarily through the **Business Performance & Margin Improvement Diagnostic**.
+
+---
+## 3. When Does Data or Machine Learning Add Value?
 
 Machine learning introduces additional complexity that is not always justified.
 
@@ -79,7 +101,7 @@ This problem is addressed primarily through the **Support Triage System**.
 
 ---
 
-## 3. Is a Generative AI System Reliable Enough to Use?
+## 4. Is a Generative AI System Reliable Enough to Use?
 
 A functioning LLM or RAG prototype does not automatically represent a launch-ready product.
 
@@ -98,7 +120,7 @@ This problem is addressed primarily through the **Document Q&A RAG Assistant**, 
 
 ---
 
-## 4. Which Technical Configuration Should Be Used?
+## 5. Which Technical Configuration Should Be Used?
 
 Teams frequently have several technically viable choices.
 
@@ -117,7 +139,7 @@ This problem is addressed primarily through the **Executive Brief Generator**, w
 
 ---
 
-## 5. Where Should Automation or AI Autonomy Stop?
+## 6. Where Should Automation or AI Autonomy Stop?
 
 Agentic systems introduce product risks beyond simple generation.
 
@@ -474,6 +496,27 @@ Evidence should include:
 
 ---
 
+## Business Performance Outcome
+
+Demonstrate the ability to evaluate how a business operates economically and recommend actions that improve performance.
+
+Evidence should include:
+
+- business-model understanding
+- revenue and cost-driver analysis
+- operating-performance diagnosis
+- financial and operating baselines
+- KPI selection
+- margin analysis
+- financial modeling
+- scenario and sensitivity analysis
+- implementation-cost estimates
+- payback analysis
+- investment prioritization
+- risk assessment
+- evidence-based executive recommendations
+
+---
 ## Technical Fluency Outcome
 
 Demonstrate enough technical capability to understand and prototype AI product behavior.
@@ -528,8 +571,8 @@ Progress should be measured at multiple levels.
 
 ## Portfolio Outcomes
 
-- 3 completed flagship projects
-- 2 completed supporting projects
+- 4 completed flagship projects
+- 1 completed supporting project
 - each project contains a clear product problem
 - each project contains measurable success criteria
 - each project contains a baseline
@@ -595,13 +638,11 @@ Where applicable, projects should evaluate:
 
 | Initiative | Type | Strategic Purpose |
 |---|---|---|
-| Support Triage System | Supporting | Establish technical foundations and compare deterministic rules with data-driven approaches |
+| Executive Brief Generator | Flagship | Demonstrate technology-enabled workflow design, controlled evaluation, regression discipline, human review, and promotion decisions |
+| Business Performance & Margin Improvement Diagnostic | Flagship | Demonstrate business-performance analysis, operating economics, financial reasoning, KPI management, prioritization, and executive decision-making |
+| Document Q&A RAG Assistant | Flagship | Demonstrate retrieval quality, grounding, reranking, evidence evaluation, and deployment-readiness decisions |
 | Workflow Opportunity & ROI Analyzer | Flagship | Demonstrate workflow diagnosis, technology-opportunity identification, prioritization, and ROI reasoning |
-| Document Q&A RAG Assistant | Flagship | Demonstrate retrieval quality, grounding, reranking, evidence evaluation, and launch-readiness decisions |
-| Executive Brief Generator | Flagship | Demonstrate AI workflow design, controlled evaluation, regression discipline, human-in-the-loop controls, and product promotion decisions |
-| Business Performance & Margin Improvement Diagnostic | Flagship | Demonstrate business-performance analysis, operating economics, KPI management, prioritization, and executive decision-making |
-
-
+| Support Triage System | Supporting | Establish technical foundations and compare deterministic rules with data-driven approaches |
 ---
 
 # Prioritization Logic
@@ -680,6 +721,7 @@ Primary focus:
 - model evaluation
 - error analysis
 - Workflow Opportunity & ROI Analyzer
+- Business Performance & Margin Improvement Diagnostic
 
 Primary outcomes:
 
@@ -688,6 +730,11 @@ Primary outcomes:
 - understand model metrics
 - compare ML against deterministic approaches
 - make evidence-based technology and business recommendations
+- analyze business performance and operating economics
+- connect KPI movement to financial outcomes
+- model margin-improvement scenarios
+- compare implementation cost with expected economic value
+- prioritize initiatives based on impact, confidence, risk, and effort
 
 Primary learning questions:
 
@@ -722,7 +769,6 @@ Primary initiatives:
 
 - Document Q&A RAG Assistant
 - Executive Brief Generator
-- Business Performance & Margin Improvement Diagnostic
 
 Primary outcomes:
 
@@ -778,6 +824,23 @@ Model Selection
 Agentic Reliability
 ```
 
+```text
+Business Problem Definition
+        ↓
+Operational Baseline
+        ↓
+Data & Financial Analysis
+        ↓
+Performance Diagnosis
+        ↓
+Improvement Scenarios
+        ↓
+Economic Evaluation
+        ↓
+Prioritization
+        ↓
+Management Recommendation
+```
 Later projects should not bypass foundational understanding simply to produce more impressive-looking applications.
 
 ---
@@ -925,11 +988,11 @@ Evaluate structured extraction quality, grounding, ownership accuracy, decision-
 
 Assumption:
 
-> An AI workflow can gain useful autonomy without removing necessary human control.
+> A structured operating diagnostic can identify credible opportunities to improve business performance and margin while preserving growth, customer outcomes, and control effectiveness.
 
 Validation:
 
-Test approval boundaries, permission failures, invalid tool calls, repeated actions, and escalation behavior.
+Use public-company data or clearly labeled hypothetical data to diagnose revenue and cost drivers, model improvement initiatives, estimate implementation cost and payback, assess operational and regulatory risks, and determine whether the recommended portfolio of actions can credibly achieve the target improvement.
 
 ---
 

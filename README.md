@@ -87,9 +87,18 @@ The objective is to understand technology deeply enough to make better business,
 - Operational problem solving
 - Workflow analysis
 - Process improvement
+- Business-model analysis
 - Business-value identification
+- Operating economics
+- Financial performance analysis
+- Revenue and cost-driver analysis
+- Margin analysis
 - Metrics and performance management
+- KPI management
 - Cost and efficiency analysis
+- Implementation economics
+- Investment prioritization
+- Capital-allocation thinking
 - Decision support
 - Organizational execution
 
@@ -239,9 +248,9 @@ This area provides enough systems understanding to reason about:
 
 ---
 
-## Product & Architecture
+## Business, Product & Architecture
 
-Requirements · Product Metrics · Experiment Design · Human Escalation · Technical Trade-Offs · Build-vs-Buy Thinking · Risk Analysis · Launch Readiness · Product Recommendations
+Business Case Development · Requirements · Product Metrics · KPI Design · Experiment Design · Human Escalation · Technical Trade-Offs · Financial Trade-Offs · Build-vs-Buy Thinking · Implementation ROI · Payback Analysis · Investment Prioritization · Risk Analysis · Launch Readiness · Executive & Product Recommendations
 
 ### Purpose
 
@@ -262,23 +271,29 @@ but also:
 Projects generally follow the same development and decision-making sequence:
 
 ```text
-Problem Discovery
+Business / User Context
         ↓
-User / Workflow Understanding
+Problem
+        ↓
+Value at Stake
+        ↓
+Desired Outcome
+        ↓
+Current-State Baseline
+        ↓
+Alternative Approaches
         ↓
 Requirements
         ↓
-Baseline
+Technical / Operating Approach
         ↓
-Technical Approach
-        ↓
-Prototype / Build
+Build / Analysis
         ↓
 Evaluation
         ↓
-Failure Analysis
+Failure & Risk Analysis
         ↓
-Business, Product & Architecture Trade-Offs
+Business, Product & Technical Trade-Offs
         ↓
 Recommendation
         ↓
@@ -326,7 +341,42 @@ The project is also used to evaluate:
 
 ---
 
-## 2. Document Q&A RAG Assistant
+## 2. Business Performance & Margin Improvement Diagnostic
+**Type:** Flagship  
+**Status:** Planned
+
+A management-level business performance case study focused on diagnosing operating economics, identifying margin-improvement opportunities, quantifying financial impact, evaluating implementation risk, and recommending where management should invest.
+
+The project will use public-company financial and operating data, or clearly labeled hypothetical assumptions, to connect business-performance analysis to explicit management decisions.
+
+Planned deliverables include:
+
+- business and operating-performance baseline
+- revenue and cost-driver analysis
+- operating-margin improvement model
+- initiative-level financial impact estimates
+- implementation cost and payback analysis
+- KPI dashboard for management visibility
+- scenario and sensitivity analysis
+- prioritization framework
+- operational and regulatory risk assessment
+- executive recommendation
+
+The project is designed to demonstrate:
+
+- business judgment
+- operating economics
+- financial reasoning
+- KPI management
+- prioritization
+- trade-off analysis
+- evidence-based executive decision-making
+
+The project does not represent actual P&L ownership. It develops the analytical capabilities required to understand business performance, evaluate improvement opportunities, and make management-level recommendations.
+
+---
+
+## 3. Document Q&A RAG Assistant
 **Type:** Flagship  
 **Status:** In Progress
 
@@ -357,7 +407,7 @@ The project is also used to evaluate:
 
 ---
 
-## 3. Workflow Opportunity & ROI Analyzer
+## 4. Workflow Opportunity & ROI Analyzer
 **Type:** Flagship  
 **Status:** Planned
 
@@ -375,7 +425,7 @@ Focus areas include:
 
 ---
 
-## 4. Support Triage System
+## 5. Support Triage System
 **Type:** Supporting  
 **Status:** In Progress
 
@@ -394,20 +444,3 @@ Current capabilities include:
 - fail-fast control flow
 
 ---
-
-## 5. Business Performance & Margin Improvement Diagnostic
-**Type:** Supporting  
-**Status:** Planned
-
-A business performance case study focused on operating economics, margin improvement, KPI management, prioritization, implementation risk, and executive decision-making.
-
-Focus areas include:
-
-- financial and operating performance analysis
-- revenue and cost-driver analysis
-- margin-improvement scenarios
-- KPI design and management visibility
-- initiative prioritization
-- implementation cost and payback analysis
-- operational and regulatory risk assessment
-- executive recommendation
