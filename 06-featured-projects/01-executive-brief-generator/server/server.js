@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const http = require("http");
 const fs = require("fs");
 const path = require("path");
@@ -9,14 +11,12 @@ const ROOT_DIR = path.join(__dirname, "..");
 
 const STAGE1_PROMPT_PATH = path.join(
   ROOT_DIR,
-  "prompt-library",
   "prompts",
   "structured-extractor-v0.8.txt"
 );
 
 const STAGE2_PROMPT_PATH = path.join(
   ROOT_DIR,
-  "prompt-library",
   "prompts",
   "executive-brief-generator-v1.4.txt"
 );
