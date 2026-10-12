@@ -570,7 +570,7 @@ Progress should be measured at multiple levels.
 
 ## Portfolio Outcomes
 
-- 3 completed flagship projects
+- 1 completed flagship project
 - 1 completed supporting project
 - each project contains a clear product problem
 - each project contains measurable success criteria
@@ -676,6 +676,8 @@ The important question is:
 
 # Roadmap Horizons
 
+**Current Primary Initiative:** Business Performance & Margin Improvement Diagnostic
+
 The roadmap uses **Now / Next / Later** rather than fixed feature dates.
 
 ## Now — Establish Technical & Operating Foundations
@@ -769,7 +771,6 @@ Primary focus:
 Primary initiatives:
 
 - Document Q&A RAG Assistant
-- Executive Brief Generator
 
 Primary outcomes:
 
@@ -981,6 +982,8 @@ Assumption:
 Validation:
 
 Evaluate structured extraction quality, grounding, ownership accuracy, decision-state preservation, approval integrity, unsupported inference, regression behavior, and Stage-2 executive-brief quality across controlled synthetic operational cases.
+
+**Status:** Complete — v1.0 validated as a portfolio-grade prototype on October 12, 2026.
 
 ---
 
