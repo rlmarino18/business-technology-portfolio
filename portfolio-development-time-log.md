@@ -218,7 +218,7 @@ The triage prototype now behaves as a simple decision pipeline: each ticket is c
 
 This provides a deterministic baseline that can later be compared against ML-assisted classification or routing approaches.
 
-# Session 4 — Boolean Logic & Compound Decision Rules
+### Session 4 — Boolean Logic & Compound Decision Rules
 
 **Date:** September 30, 2026  
 **Duration:** 30 minutes  
@@ -275,7 +275,7 @@ Using `or` instead of `and` would significantly increase escalation volume by es
 
 ---
 
-# Session 5 — Lists as Working Queues
+### Session 5 — Lists as Working Queues
 
 **Date:** September 30, 2026  
 **Duration:** 30 minutes  
@@ -348,7 +348,7 @@ Placing aggregate queue output inside the loop produces incomplete intermediate 
 
 ---
 
-# Session 6 — Indexing, Membership & Duplicate Prevention
+### Session 6 — Indexing, Membership & Duplicate Prevention
 
 **Date:** September 30, 2026  
 **Duration:** 30 minutes  
@@ -422,7 +422,7 @@ Attempting to access a list position that does not exist can also produce an `In
 
 ---
 
-# Session 7 — Functions, Parameters & Reusable Routing Logic
+### Session 7 — Functions, Parameters & Reusable Routing Logic
 
 **Date:** September 30, 2026  
 **Duration:** 30 minutes  
@@ -521,7 +521,7 @@ Here:
 - Boolean functions are useful for business decision rules
 - refactoring improves readability and maintainability
 
-# Session 8 — Input Validation & Defensive Decision Logic
+### Session 8 — Input Validation & Defensive Decision Logic
 
 **Date:** October 2, 2026  
 **Duration:** 30 minutes  
@@ -686,7 +686,7 @@ means:
 - fail-fast logic prevents unnecessary downstream processing
 - validation improves reliability and makes workflow failures easier to control
 
-# Session 9 — RAG Migration, Evaluation & Portfolio Reconciliation
+### Session 9 — RAG Migration, Evaluation & Portfolio Reconciliation
 
 **Date:** October 2, 2026  
 **Duration:** 1 hour  
@@ -781,7 +781,7 @@ The review identified several unresolved retrieval risks:
 ---
 
 
-# Session 10 — Value Validation & Defensive Business Rules
+### Session 10 — Value Validation & Defensive Business Rules
 
 **Date:** October 2, 2026  
 **Duration:** 30 minutes  
@@ -866,7 +866,7 @@ Testing exposed several data-quality risks:
 ---
 
 
-# Session 11 — Type Validation & Defensive Input Handling
+### Session 11 — Type Validation & Defensive Input Handling
 
 **Date:** October 3, 2026  
 **Duration:** 30 minutes  
@@ -953,7 +953,7 @@ Type validation therefore protects both business logic and system reliability.
 ---
 
 
-# Session 12 — Exceptions & Controlled Error Handling
+### Session 12 — Exceptions & Controlled Error Handling
 
 **Date:** October 5, 2026  
 **Duration:** 1.0 hour  
@@ -1058,7 +1058,7 @@ This demonstrates that graceful degradation must be paired with observability an
 ---
 
 
-# Session 13 — File I/O & Persistent Data
+### Session 13 — File I/O & Persistent Data
 
 **Date:** October 7, 2026  
 **Duration:** 1.0 hour  
@@ -1200,6 +1200,110 @@ Separating ingestion from processing reduces coupling and makes future integrati
 
 ---
 
+## October 2026
+
+### Session 14 — Modules, Imports & Basic Testing
+
+**Date:** October 11, 2026  
+**Area:** Python Foundations  
+**Project:** Support Triage System  
+**Duration:** 1 hour
+
+### Objective
+
+Strengthen the Support Triage System architecture through modularization, imports, and automated testing.
+
+### Work Completed
+
+- separated ticket classification, SLA, and escalation logic into reusable modules
+- separated validation logic from orchestration
+- introduced `main()` and the execution guard
+- prevented import-time side effects
+- added structured `unittest` coverage
+- confirmed 9 automated tests passing
+- reinforced separation of concerns
+
+### Technical Concepts
+
+- Python modules
+- imports
+- separation of concerns
+- `main()`
+- `if __name__ == "__main__"`
+- `unittest`
+- regression testing
+
+---
+
+### Session 15 — Support Triage v1 Completion
+
+**Date:** October 11, 2026  
+**Area:** Python Foundations / Portfolio Development  
+**Project:** Support Triage System  
+**Duration:** 30 minutes
+
+### Objective
+
+Close the Support Triage System as a completed supporting portfolio project.
+
+### Work Completed
+
+- ran the full automated test suite
+- confirmed 9 of 9 tests passing
+- completed the project README
+- documented architecture, validation, testing, business value, limitations, and future opportunities
+- marked Support Triage System v1 complete
+
+---
+
+### Session 16 — Business Performance Diagnostic & Pandas Foundations
+
+**Date:** October 11, 2026  
+**Area:** Data Analysis  
+**Project:** Business Performance & Margin Improvement Diagnostic  
+**Duration:** 30 minutes
+
+### Objective
+
+Begin the Business Performance & Margin Improvement Diagnostic while applying introductory Pandas concepts to a real business analysis.
+
+### Work Completed
+
+- selected Toast as the case company
+- defined the management question and decision criteria
+- documented project and data requirements
+- created the initial 2023–2025 financial dataset
+- loaded and inspected data with Pandas
+- calculated gross profit and gross margin
+- calculated year-over-year revenue growth
+- calculated segment gross margins
+- analyzed revenue mix and mix changes
+- calculated gross-profit contribution by segment
+- reconciled calculations to reported gross profit
+- exported a processed dataset
+
+### Technical Concepts
+
+- Pandas DataFrames
+- `read_csv()`
+- `head()`
+- `shape`
+- `columns`
+- `dtypes`
+- `info()`
+- calculated columns
+- `pct_change()`
+- `diff()`
+- `to_csv()`
+
+### Business & Product Application
+
+- evaluated whether margin improvement may be associated with stronger segment economics and changing revenue mix
+- kept findings preliminary rather than converting them into unsupported management recommendations
+- established reconciliation as a control before deeper analysis
+
+---
+
 # Actual Time by Week
 
 ## Week Ending September 27, 2026
@@ -1226,13 +1330,13 @@ Separating ingestion from processing reduces coupling and makes future integrati
 
 ## Week Ending October 11, 2026
 
-| Category | Hours |
+| Activity | Hours |
 |---|---:|
-| Python / Technical Learning | 2.00 |
-| Product / Jira | 0.00 |
-| Dedicated Portfolio Build Block | 0.00 |
-| Weekly Assessment | 0.00 |
-| **Total Focused Time** | **2.00** |
+| Python / Technical Learning | 1.00 |
+| Data Analysis / Technical Learning | 0.50 |
+| Portfolio Restructuring & Documentation | 1.00 |
+| Support Triage Completion | 0.50 |
+| **Total Focused Time** | **3.00** |
 
 > Portfolio project hours overlap with technical-learning hours and are therefore tracked separately rather than added again to the weekly total.
 
@@ -1280,62 +1384,4 @@ Session 2
 Session 3
 Session 4
 ...
-
-### Session 16 — Portfolio Repositioning, Support Triage Closeout & Business Performance Foundations
-
-**Time:** 2.0 hours
-
-**Allocation:**
-- Business & Technology portfolio restructuring — 1.0h
-- Support Triage System completion — 0.5h
-- Business Performance & Margin Improvement Diagnostic — 0.5h
-
-**Portfolio Development**
-- completed broader repositioning from an AI-centered portfolio to Business & Technology
-- reorganized featured projects around business improvement, product development, and applied technology
-- reordered the featured-project portfolio
-- expanded the learning roadmap to include operating economics, KPI management, margin analysis, financial reasoning, and investment prioritization
-
-**Support Triage System**
-- executed full automated test suite
-- confirmed 9/9 unit tests passing
-- completed project README and portfolio documentation
-- documented architecture, validation strategy, testing, business value, limitations, and future opportunities
-- marked Support Triage System v1 complete
-
-**Business Performance & Margin Improvement Diagnostic**
-- began active development using Toast as the case company
-- defined the management decision, analytical objective, decision criteria, and source discipline
-- defined financial and operating data requirements
-- created initial 2023–2025 financial dataset
-- loaded and inspected data with Pandas
-- calculated gross profit and gross margin
-- calculated year-over-year revenue growth
-- calculated subscription and fintech gross margins
-- analyzed revenue mix and mix changes
-- calculated gross-profit contribution by segment
-- reconciled segment calculations to reported company gross profit
-- exported a processed analytical dataset
-
-**Initial Analytical Findings**
-- company gross margin increased from approximately 21.6% in 2023 to 25.9% in 2025
-- subscription revenue grew faster than fintech revenue across the periods analyzed
-- subscription revenue mix increased while hardware/services mix declined
-- subscription and fintech gross margins both improved
-- subscription contributes disproportionately to gross profit relative to its revenue share
-- hardware/services produced negative segment gross profit in the current dataset
-- further analysis is required before attributing causes or making management recommendations
-
-**Learning**
-- introduced Pandas DataFrames
-- used `read_csv()`, `head()`, `shape`, `columns`, `dtypes`, and `info()`
-- created calculated columns
-- used `pct_change()` for growth analysis
-- used `diff()` for percentage-point mix analysis
-- used `to_csv()` to persist processed data
-- reinforced reconciliation of calculated metrics to reported financial totals
-
-**Next**
-- add operating-expense data
-- evaluate operating leverage
-- determine whether margin expansion is driven by gross-margin improvement, operating-expense leverage, or both
+```
