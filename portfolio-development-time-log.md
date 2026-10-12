@@ -25,11 +25,11 @@ Multiple sessions may be completed on the same day, and gaps between sessions do
 |---|---:|
 | Foundations | 0.0 |
 | Python | 7.33 |
-| Data Analysis | 0.0 |
+| Data Analysis | 0.50 |
 | Machine Learning | 0.0 |
 | Applied AI | 1.0 |
 | AI Systems | 0.0 |
-| **Total Learning Time** | **8.33** |
+| **Total Learning Time** | **8.83** |
 
 > Learning-area hours represent the technical capability developed during portfolio work. Project hours are tracked separately below because the same session may simultaneously contribute to both technical learning and a featured project. These totals should not be added together.
 
@@ -40,11 +40,11 @@ Multiple sessions may be completed on the same day, and gaps between sessions do
 | Project | Status | Hours |
 |---|---|---:|
 | Executive Brief Generator | In Progress | 44.50 |
-| Business Performance & Margin Improvement Diagnostic | Not Started | 0.0 |
+| Business Performance & Margin Improvement Diagnostic | In Progress | 0.50 |
 | Document Q&A RAG Assistant | In Progress | 3.50 |
 | Workflow Opportunity & ROI Analyzer | Not Started | 0.0 |
-| Support Triage System | Complete | 7.33 |
-| **Total Portfolio Project Time** |  | **55.33** |
+| Support Triage System | Complete | 7.83 |
+| **Total Portfolio Project Time** |  | **56.33** |
 
 > Portfolio project hours represent verified time invested in building, testing, evaluating, and documenting featured projects. Some projects began before the current structured session sequence; verified historical development time is included where an existing project time log is available.
 
@@ -1281,3 +1281,62 @@ Session 2
 Session 3
 Session 4
 ...
+
+### Session 16 — Portfolio Repositioning, Support Triage Closeout & Business Performance Foundations
+
+**Time:** 2.0 hours
+
+**Allocation:**
+- Business & Technology portfolio restructuring — 1.0h
+- Support Triage System completion — 0.5h
+- Business Performance & Margin Improvement Diagnostic — 0.5h
+
+**Portfolio Development**
+- completed broader repositioning from an AI-centered portfolio to Business & Technology
+- reorganized featured projects around business improvement, product development, and applied technology
+- reordered the featured-project portfolio
+- expanded the learning roadmap to include operating economics, KPI management, margin analysis, financial reasoning, and investment prioritization
+
+**Support Triage System**
+- executed full automated test suite
+- confirmed 9/9 unit tests passing
+- completed project README and portfolio documentation
+- documented architecture, validation strategy, testing, business value, limitations, and future opportunities
+- marked Support Triage System v1 complete
+
+**Business Performance & Margin Improvement Diagnostic**
+- began active development using Toast as the case company
+- defined the management decision, analytical objective, decision criteria, and source discipline
+- defined financial and operating data requirements
+- created initial 2023–2025 financial dataset
+- loaded and inspected data with Pandas
+- calculated gross profit and gross margin
+- calculated year-over-year revenue growth
+- calculated subscription and fintech gross margins
+- analyzed revenue mix and mix changes
+- calculated gross-profit contribution by segment
+- reconciled segment calculations to reported company gross profit
+- exported a processed analytical dataset
+
+**Initial Analytical Findings**
+- company gross margin increased from approximately 21.6% in 2023 to 25.9% in 2025
+- subscription revenue grew faster than fintech revenue across the periods analyzed
+- subscription revenue mix increased while hardware/services mix declined
+- subscription and fintech gross margins both improved
+- subscription contributes disproportionately to gross profit relative to its revenue share
+- hardware/services produced negative segment gross profit in the current dataset
+- further analysis is required before attributing causes or making management recommendations
+
+**Learning**
+- introduced Pandas DataFrames
+- used `read_csv()`, `head()`, `shape`, `columns`, `dtypes`, and `info()`
+- created calculated columns
+- used `pct_change()` for growth analysis
+- used `diff()` for percentage-point mix analysis
+- used `to_csv()` to persist processed data
+- reinforced reconciliation of calculated metrics to reported financial totals
+
+**Next**
+- add operating-expense data
+- evaluate operating leverage
+- determine whether margin expansion is driven by gross-margin improvement, operating-expense leverage, or both

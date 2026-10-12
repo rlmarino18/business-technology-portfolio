@@ -343,7 +343,7 @@ The project is also used to evaluate:
 
 ## 2. Business Performance & Margin Improvement Diagnostic
 **Type:** Flagship  
-**Status:** Planned
+**Status:** In Progress
 
 A management-level business performance case study focused on diagnosing operating economics, identifying margin-improvement opportunities, quantifying financial impact, evaluating implementation risk, and recommending where management should invest.
 
