@@ -59,7 +59,6 @@ The portfolio should demonstrate the ability to identify:
 - implementation risks
 - expected business value
 
-This problem is addressed primarily through the **Workflow Opportunity & ROI Analyzer**.
 
 ---
 
@@ -571,7 +570,7 @@ Progress should be measured at multiple levels.
 
 ## Portfolio Outcomes
 
-- 4 completed flagship projects
+- 3 completed flagship projects
 - 1 completed supporting project
 - each project contains a clear product problem
 - each project contains measurable success criteria
@@ -641,9 +640,12 @@ Where applicable, projects should evaluate:
 | Executive Brief Generator | Flagship | Demonstrate technology-enabled workflow design, controlled evaluation, regression discipline, human review, and promotion decisions |
 | Business Performance & Margin Improvement Diagnostic | Flagship | Demonstrate business-performance analysis, operating economics, financial reasoning, KPI management, prioritization, and executive decision-making |
 | Document Q&A RAG Assistant | Flagship | Demonstrate retrieval quality, grounding, reranking, evidence evaluation, and deployment-readiness decisions |
-| Workflow Opportunity & ROI Analyzer | Flagship | Demonstrate workflow diagnosis, technology-opportunity identification, prioritization, and ROI reasoning |
 | Support Triage System | Supporting | Establish technical foundations and compare deterministic rules with data-driven approaches |
 ---
+
+Workflow diagnosis, technology-opportunity identification, ROI reasoning, and prioritization remain cross-project capabilities rather than a standalone featured project.
+
+These capabilities should be demonstrated where relevant through the Business Performance & Margin Improvement Diagnostic, Executive Brief Generator, and other portfolio work.
 
 # Prioritization Logic
 
@@ -720,7 +722,6 @@ Primary focus:
 - simple ML
 - model evaluation
 - error analysis
-- Workflow Opportunity & ROI Analyzer
 - Business Performance & Margin Improvement Diagnostic
 
 Primary outcomes:
@@ -948,7 +949,6 @@ Compare deterministic rules against a simple classifier using the same evaluatio
 
 ---
 
-### Workflow Opportunity & ROI Analyzer
 
 Assumption:
 

@@ -42,7 +42,6 @@ Multiple sessions may be completed on the same day, and gaps between sessions do
 | Executive Brief Generator | In Progress | 44.50 |
 | Business Performance & Margin Improvement Diagnostic | In Progress | 0.50 |
 | Document Q&A RAG Assistant | In Progress | 3.50 |
-| Workflow Opportunity & ROI Analyzer | Not Started | 0.0 |
 | Support Triage System | Complete | 7.83 |
 | **Total Portfolio Project Time** |  | **56.33** |
 

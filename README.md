@@ -407,25 +407,7 @@ The project is also used to evaluate:
 
 ---
 
-## 4. Workflow Opportunity & ROI Analyzer
-**Type:** Flagship  
-**Status:** Planned
-
-Evaluates operational workflows to determine where process improvement, automation, analytics, or AI may create measurable value.
-
-Focus areas include:
-
-- workflow discovery
-- technology and automation opportunity identification
-- business-value estimation
-- implementation complexity
-- prioritization
-- ROI reasoning
-- recommendation quality
-
----
-
-## 5. Support Triage System
+## 4. Support Triage System
 **Type:** Supporting  
 **Status:** Complete
 
