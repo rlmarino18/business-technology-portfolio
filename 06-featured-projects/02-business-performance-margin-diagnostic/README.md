@@ -107,6 +107,41 @@ Keep reported data separate from:
 
 The project does not claim P&L ownership, internal company access, or certainty that modeled improvements would occur.
 
+## Current Analysis Status
+
+The initial 2023–2025 Toast performance analysis is complete.
+
+Completed analysis includes:
+
+- consolidated revenue growth and gross-margin trends
+- segment gross-margin analysis
+- revenue-mix analysis
+- gross-profit contribution by segment
+- 2023–2025 gross-profit growth decomposition
+- missing-value and duplicate-data checks
+- descriptive statistics
+- management-oriented visualizations
+- preliminary findings and management hypothesis
+
+Current evidence indicates:
+
+- Fintech remains the largest absolute gross-profit growth contributor
+- Subscription is increasingly important to margin quality
+- Hardware & Services remains a gross-profit drag
+- consolidated margin improvement appears associated with both favorable mix shift and improving segment economics
+
+These findings remain preliminary and do not yet establish causal attribution.
+
+### Next Analytical Step
+
+Decompose consolidated gross-margin expansion into:
+
+1. revenue-mix effects
+2. within-segment margin improvement
+3. residual / interaction effects
+
+This will test how much of the observed margin improvement is attributable to changing business mix versus improving economics inside each segment.
+
 ## Technical Support
 
 Python and Pandas may support:

@@ -25,11 +25,11 @@ Multiple sessions may be completed on the same day, and gaps between sessions do
 |---|---:|
 | Foundations | 0.0 |
 | Python | 7.33 |
-| Data Analysis | 0.50 |
+| Data Analysis | 1.75 |
 | Machine Learning | 0.0 |
 | Applied AI | 1.0 |
 | AI Systems | 0.0 |
-| **Total Learning Time** | **8.83** |
+| **Total Learning Time** | **10.08** |
 
 > Learning-area hours represent the technical capability developed during portfolio work. Project hours are tracked separately below because the same session may simultaneously contribute to both technical learning and a featured project. These totals should not be added together.
 
@@ -40,10 +40,10 @@ Multiple sessions may be completed on the same day, and gaps between sessions do
 | Project | Status | Hours |
 |---|---|---:|
 | Executive Brief Generator | Complete | 45.25 |
-| Business Performance & Margin Improvement Diagnostic | In Progress | 0.50 |
+| Business Performance & Margin Improvement Diagnostic | In Progress | 1.75 |
 | Document Q&A RAG Assistant | In Progress | 3.50 |
 | Support Triage System | Complete | 7.83 |
-| **Total Portfolio Project Time** |  | **57.08** |
+| **Total Portfolio Project Time** |  | **58.33** |
 
 > Portfolio project hours represent verified time invested in building, testing, evaluating, and documenting featured projects. Some projects began before the current structured session sequence; verified historical development time is included where an existing project time log is available.
 
@@ -1351,6 +1351,71 @@ Complete and formally close Executive Brief Generator v1.0 as a validated portfo
 - distinguished portfolio-grade product completion from production SaaS readiness
 - closed v1.0 without adding nonessential features such as authentication, analytics, or production deployment infrastructure
 
+
+### Session 18 — Data Analysis Foundations & Toast Performance Analysis
+
+**Date:** October 12, 2026
+**Area:** Data Analysis
+**Project:** Business Performance & Margin Improvement Diagnostic
+**Duration:** 1 hour 15 minutes
+
+### Objective
+
+Continue Data Analysis foundations while immediately applying each concept to the Toast Business Performance & Margin Improvement Diagnostic.
+
+### Work Completed
+
+- practiced Boolean filtering using single and multiple conditions
+- used `.loc[]` for combined row and column selection
+- ranked performance with `sort_values()`
+- identified extreme observations with `nlargest()` and `nsmallest()`
+- summarized metrics using `.agg()`
+- inspected structural missing values with `isna()`
+- created analysis-specific subsets using `dropna()`
+- checked exact-row and business-key duplicates
+- generated descriptive statistics with `describe()`
+- installed and used Matplotlib for analytical visualization
+- created and saved five management-oriented charts
+- compared consolidated and segment gross-margin trends
+- analyzed revenue-mix changes
+- analyzed absolute and relative gross-profit contribution by segment
+- calculated 2023–2025 gross-profit change by segment
+- calculated each segment’s contribution to consolidated gross-profit growth
+- calculated gross-margin change in percentage points
+- calculated revenue-mix change in percentage points
+- documented preliminary findings and the current management hypothesis
+- committed and pushed the analysis and chart artifacts to GitHub
+
+### Technical Concepts
+
+- Boolean masks
+- compound filtering with `&`
+- `.loc[]`
+- `sort_values()`
+- `nlargest()` and `nsmallest()`
+- `.agg()`
+- `isna()`
+- `dropna()`
+- `duplicated()`
+- `describe()`
+- Matplotlib line charts
+- Matplotlib bar charts
+- chart persistence with `savefig()`
+- absolute values versus percentage shares
+- percentage change versus percentage-point change
+
+### Business & Product Application
+
+- identified 2025 as the strongest observed combination of revenue growth and gross margin
+- established that consolidated gross margin improved materially from 2023 through 2025
+- identified Fintech as the largest absolute contributor to gross-profit growth
+- identified Subscription as an increasingly important contributor to margin quality
+- identified Hardware & Services as a persistent gross-profit drag
+- observed a favorable revenue-mix shift toward Subscription and away from Hardware & Services
+- distinguished correlation and association from causal attribution
+- documented a preliminary management hypothesis for deeper margin decomposition
+
+
 ---
 
 # Actual Time by Week
@@ -1393,7 +1458,8 @@ Complete and formally close Executive Brief Generator v1.0 as a validated portfo
 | Activity | Hours |
 |---|---:|
 | Executive Brief Generator Completion & Validation | 0.75 |
-| **Total Focused Time** | **0.75** |
+| Data Analysis / Business Performance Diagnostic | 1.25 |
+| **Total Focused Time** | **2.00** |
 
 > Portfolio project hours overlap with technical-learning hours and are therefore tracked separately rather than added again to the weekly total.
 
