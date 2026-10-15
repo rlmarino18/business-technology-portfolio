@@ -127,20 +127,30 @@ Current evidence indicates:
 
 - Fintech remains the largest absolute gross-profit growth contributor
 - Subscription is increasingly important to margin quality
-- Hardware & Services remains a gross-profit drag
-- consolidated margin improvement appears associated with both favorable mix shift and improving segment economics
+- Hardware & Services remains a persistent gross-profit drag
+- favorable revenue mix was the dominant driver of 2023–2025 consolidated gross-margin expansion
+- within-segment margin improvement provided additional support
 
-These findings remain preliminary and do not yet establish causal attribution.
+The 2023–2025 gross-margin decomposition reconciles the full observed 4.31 percentage-point improvement:
+
+- Mix effect: +3.06 percentage points
+- Within-segment effect: +0.79 percentage points
+- Interaction effect: +0.42 percentage points
+- Amortization effect: +0.05 percentage points
+
+Approximately 71% of the observed gross-margin expansion was attributable to favorable revenue mix.
+
+These findings are descriptive and do not yet establish the operational causes behind the observed mix and margin changes.
 
 ### Next Analytical Step
 
-Decompose consolidated gross-margin expansion into:
+Investigate the operating and commercial drivers behind the observed economics, including:
 
-1. revenue-mix effects
-2. within-segment margin improvement
-3. residual / interaction effects
-
-This will test how much of the observed margin improvement is attributable to changing business mix versus improving economics inside each segment.
+1. why Subscription gained revenue mix
+2. why Hardware & Services remained structurally negative-margin
+3. what operating-cost drivers sit below gross profit
+4. which margin improvements appear repeatable versus temporary
+5. which improvement initiatives are credible enough to model for cost, payback, risk, and prioritization
 
 ## Technical Support
 

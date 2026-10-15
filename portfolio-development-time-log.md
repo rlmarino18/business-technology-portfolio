@@ -25,11 +25,11 @@ Multiple sessions may be completed on the same day, and gaps between sessions do
 |---|---:|
 | Foundations | 0.0 |
 | Python | 7.33 |
-| Data Analysis | 1.75 |
+| Data Analysis | 2.75 |
 | Machine Learning | 0.0 |
 | Applied AI | 1.0 |
 | AI Systems | 0.0 |
-| **Total Learning Time** | **10.08** |
+| **Total Learning Time** | **11.08** |
 
 > Learning-area hours represent the technical capability developed during portfolio work. Project hours are tracked separately below because the same session may simultaneously contribute to both technical learning and a featured project. These totals should not be added together.
 
@@ -40,10 +40,10 @@ Multiple sessions may be completed on the same day, and gaps between sessions do
 | Project | Status | Hours |
 |---|---|---:|
 | Executive Brief Generator | Complete | 45.25 |
-| Business Performance & Margin Improvement Diagnostic | In Progress | 1.75 |
+| Business Performance & Margin Improvement Diagnostic | In Progress | 2.75 |
 | Document Q&A RAG Assistant | In Progress | 3.50 |
 | Support Triage System | Complete | 7.83 |
-| **Total Portfolio Project Time** |  | **58.33** |
+| **Total Portfolio Project Time** |  | **59.33** |
 
 > Portfolio project hours represent verified time invested in building, testing, evaluating, and documenting featured projects. Some projects began before the current structured session sequence; verified historical development time is included where an existing project time log is available.
 
@@ -1418,6 +1418,74 @@ Continue Data Analysis foundations while immediately applying each concept to th
 
 ---
 
+### Session 19 — Gross Margin Decomposition
+
+**Date:** October 14, 2026
+**Area:** Data Analysis
+**Project:** Business Performance & Margin Improvement Diagnostic
+**Duration:** 1 hour
+
+### Objective
+
+Move from descriptive margin analysis toward diagnostic analysis by decomposing Toast's 2023–2025 consolidated gross-margin expansion into its underlying mathematical drivers.
+
+### Work Completed
+
+- reviewed weighted-average margin mechanics
+- distinguished revenue mix from segment margin and weighted-margin contribution
+- debugged Python variable-scope and code-placement issues
+- calculated segment revenue mix and segment gross margins for decomposition
+- calculated each segment's weighted contribution to consolidated gross margin
+- reconciled weighted segment margins to reported consolidated gross margin
+- explicitly accounted for unallocated intangible amortization
+- calculated 2023–2025 revenue-mix effects
+- calculated within-segment margin effects
+- calculated interaction effects
+- calculated the change in amortization drag
+- built a final margin-decomposition summary table
+- reconciled total explained margin change to observed gross-margin change
+- created and saved a gross-margin decomposition chart
+- updated analytical findings and project README
+- identified the next analytical phase: operating and commercial drivers below gross profit
+
+### Technical Concepts
+
+- weighted averages
+- revenue mix
+- segment margin
+- weighted-margin contribution
+- Python variable scope
+- `for` loops for repeated segment calculations
+- `.loc[]` for base-year and end-year selection
+- `pd.DataFrame()` for analytical summary tables
+- dynamic column creation
+- reconciliation controls
+- floating-point precision
+- Matplotlib bar-chart creation
+- chart persistence with `savefig()`
+
+### Analytical Concepts
+
+- mix effect
+- within-segment margin effect
+- interaction effect
+- unallocated-cost effect
+- consolidated-margin reconciliation
+- descriptive versus diagnostic analysis
+- mathematical attribution versus causal attribution
+
+### Business & Product Application
+
+- determined that favorable revenue mix was the dominant driver of Toast's 2023–2025 gross-margin expansion
+- quantified the mix effect at approximately +3.06 percentage points
+- quantified the within-segment effect at approximately +0.79 percentage points
+- quantified the interaction effect at approximately +0.42 percentage points
+- quantified the amortization effect at approximately +0.05 percentage points
+- reconciled the total explained margin change of approximately +4.31 percentage points to the observed change
+- found that approximately 71% of observed gross-margin expansion was attributable to favorable revenue mix
+- identified increasing Subscription exposure and declining Hardware & Services exposure as important structural contributors
+- preserved the distinction between mathematical decomposition and causal explanation
+
 # Actual Time by Week
 
 ## Week Ending September 27, 2026
@@ -1458,8 +1526,8 @@ Continue Data Analysis foundations while immediately applying each concept to th
 | Activity | Hours |
 |---|---:|
 | Executive Brief Generator Completion & Validation | 0.75 |
-| Data Analysis / Business Performance Diagnostic | 1.25 |
-| **Total Focused Time** | **2.00** |
+| Data Analysis / Business Performance Diagnostic | 2.25 |
+| **Total Focused Time** | **3.00** |
 
 > Portfolio project hours overlap with technical-learning hours and are therefore tracked separately rather than added again to the weekly total.
 

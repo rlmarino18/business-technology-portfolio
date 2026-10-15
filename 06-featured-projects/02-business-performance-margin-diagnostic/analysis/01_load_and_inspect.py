@@ -655,5 +655,275 @@ def main() -> None:
 
     print(f"\nProcessed dataset saved to: {output_path}")
 
+    segment_columns = [
+    "subscription",
+    "fintech",
+    "hardware_services",
+    ]
+
+    for segment in segment_columns:
+        df[f"{segment}_revenue_mix"] = (
+        df[f"{segment}_revenue"] / df["total_revenue"]
+    )
+        df[f"{segment}_margin"] = (
+        (
+            df[f"{segment}_revenue"]
+            - df[f"{segment}_cost"]
+        )
+        / df[f"{segment}_revenue"]
+    )
+
+    print("\nMARGIN DECOMPOSITION INPUTS")
+
+    print(
+        df[
+            [
+                "year",
+                "subscription_revenue_mix",
+                "subscription_margin",
+                "fintech_revenue_mix",
+                "fintech_margin",
+                "hardware_services_revenue_mix",
+                "hardware_services_margin",
+            ]
+        ]
+    )
+
+    # Calculate each segment's contribution to consolidated gross margin
+
+    for segment in segment_columns:
+        df[f"{segment}_weighted_margin"] = (
+            df[f"{segment}_revenue_mix"]
+            * df[f"{segment}_margin"]
+        )
+
+    df["weighted_segment_margin"] = (
+        df["subscription_weighted_margin"]
+        + df["fintech_weighted_margin"]
+        + df["hardware_services_weighted_margin"]
+    )
+
+    print("\nWEIGHTED SEGMENT MARGIN")
+    print(
+        df[
+            [
+                "year",
+                "subscription_weighted_margin",
+                "fintech_weighted_margin",
+                "hardware_services_weighted_margin",
+                "weighted_segment_margin",
+            ]
+        ]
+    )
+
+    df["amortization_margin_effect"] = (
+        df["intangible_amortization"] / df["total_revenue"]
+    )
+
+    df["reconstructed_gross_margin"] = (
+        df["weighted_segment_margin"]
+        - df["amortization_margin_effect"]
+    )
+
+    df["reported_gross_margin_decimal"] = (
+        df["gross_margin_pct"] / 100
+    )
+
+    df["margin_reconciliation_difference"] = (
+        df["reconstructed_gross_margin"]
+        - df["reported_gross_margin_decimal"]
+    )
+
+    print("\nMARGIN RECONCILIATION")
+    print(
+        df[
+            [
+                "year",
+                "weighted_segment_margin",
+                "amortization_margin_effect",
+                "reconstructed_gross_margin",
+                "reported_gross_margin_decimal",
+                "margin_reconciliation_difference",
+            ]
+        ]
+    )
+
+    # Margin decomposition: mix effect
+
+    base_year = 2023
+    end_year = 2025
+
+    base_row = df.loc[df["year"] == base_year].iloc[0]
+    end_row = df.loc[df["year"] == end_year].iloc[0]
+
+    mix_effects = {}
+
+    for segment in segment_columns:
+        mix_change = (
+            end_row[f"{segment}_revenue_mix"]
+            - base_row[f"{segment}_revenue_mix"]
+        )
+
+        base_margin = base_row[f"{segment}_margin"]
+
+        mix_effects[segment] = (
+            mix_change * base_margin
+        )
+
+    print("\n2023 TO 2025 MIX EFFECT")
+    for segment, effect in mix_effects.items():
+        print(f"{segment}: {effect * 100:.2f} percentage points")
+
+    total_mix_effect = sum(mix_effects.values())
+
+    print(
+        f"Total Mix Effect: {total_mix_effect * 100:.2f} percentage points"
+    )
+
+        # Margin decomposition: within-segment effect
+
+    within_segment_effects = {}
+
+    for segment in segment_columns:
+        margin_change = (
+            end_row[f"{segment}_margin"]
+            - base_row[f"{segment}_margin"]
+        )
+
+        base_mix = base_row[f"{segment}_revenue_mix"]
+
+        within_segment_effects[segment] = (
+            base_mix * margin_change
+        )
+
+    print("\n2023 TO 2025 WITHIN-SEGMENT EFFECT")
+    for segment, effect in within_segment_effects.items():
+        print(f"{segment}: {effect * 100:.2f} percentage points")
+
+    total_within_segment_effect = sum(
+        within_segment_effects.values()
+    )
+
+    print(
+        f"Total Within-Segment Effect: "
+        f"{total_within_segment_effect * 100:.2f} percentage points"
+    )
+
+    # Margin decomposition: interaction effect
+
+    interaction_effects = {}
+
+    for segment in segment_columns:
+        mix_change = (
+            end_row[f"{segment}_revenue_mix"]
+            - base_row[f"{segment}_revenue_mix"]
+        )
+
+        margin_change = (
+            end_row[f"{segment}_margin"]
+            - base_row[f"{segment}_margin"]
+        )
+
+        interaction_effects[segment] = (
+            mix_change * margin_change
+        )
+
+    print("\n2023 TO 2025 INTERACTION EFFECT")
+    for segment, effect in interaction_effects.items():
+        print(f"{segment}: {effect * 100:.2f} percentage points")
+
+    total_interaction_effect = sum(
+        interaction_effects.values()
+    )
+
+    print(
+        f"Total Interaction Effect: "
+        f"{total_interaction_effect * 100:.2f} percentage points"
+    )
+
+    # Margin decomposition: amortization effect
+
+    base_amortization_effect = base_row["amortization_margin_effect"]
+    end_amortization_effect = end_row["amortization_margin_effect"]
+
+    amortization_change_effect = (
+        base_amortization_effect
+        - end_amortization_effect
+    )
+
+    print("\n2023 TO 2025 AMORTIZATION EFFECT")
+    print(
+        f"Amortization Effect: "
+        f"{amortization_change_effect * 100:.2f} percentage points"
+    )
+
+    # Final margin decomposition summary
+
+    decomposition_summary = pd.DataFrame(
+        {
+            "effect": [
+                "Mix Effect",
+                "Within-Segment Effect",
+                "Interaction Effect",
+                "Amortization Effect",
+            ],
+            "percentage_points": [
+                total_mix_effect * 100,
+                total_within_segment_effect * 100,
+                total_interaction_effect * 100,
+                amortization_change_effect * 100,
+            ],
+        }
+    )
+
+    decomposition_summary.loc[len(decomposition_summary)] = {
+        "effect": "Total Explained Margin Change",
+        "percentage_points": decomposition_summary[
+            "percentage_points"
+        ].sum(),
+    }
+
+    observed_margin_change = (
+        end_row["gross_margin_pct"]
+        - base_row["gross_margin_pct"]
+    )
+
+    decomposition_summary.loc[len(decomposition_summary)] = {
+        "effect": "Observed Gross Margin Change",
+        "percentage_points": observed_margin_change,
+    }
+
+    print("\n2023 TO 2025 MARGIN DECOMPOSITION SUMMARY")
+    print(decomposition_summary)
+
+    # Margin decomposition visualization
+
+    chart_data = decomposition_summary.iloc[:4]
+
+    plt.figure()
+
+    plt.bar(
+        chart_data["effect"],
+        chart_data["percentage_points"],
+    )
+
+    plt.title("Toast 2023–2025 Gross Margin Decomposition")
+    plt.xlabel("Driver")
+    plt.ylabel("Margin Impact (Percentage Points)")
+
+    plt.xticks(rotation=20)
+
+    plt.tight_layout()
+
+    plt.savefig(
+        Path(__file__).resolve().parents[1]
+        / "deliverables"
+        / "charts"
+        / "gross_margin_decomposition.png",
+        dpi=150,
+    )
+
+    plt.show()
+
 if __name__ == "__main__":
     main()
