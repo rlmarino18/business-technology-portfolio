@@ -635,17 +635,31 @@ Where applicable, projects should evaluate:
 
 # Strategic Initiatives
 
-| Initiative | Type | Strategic Purpose |
+The portfolio uses three flagship business cases supported by applied-technology projects and recurring foundations work.
+
+| Initiative | Role | Primary Capability Signal |
 |---|---|---|
-| Executive Brief Generator | Flagship | Demonstrate technology-enabled workflow design, controlled evaluation, regression discipline, human review, and promotion decisions |
-| Business Performance & Margin Improvement Diagnostic | Flagship | Demonstrate business-performance analysis, operating economics, financial reasoning, KPI management, prioritization, and executive decision-making |
-| Document Q&A RAG Assistant | Flagship | Demonstrate retrieval quality, grounding, reranking, evidence evaluation, and deployment-readiness decisions |
-| Support Triage System | Supporting | Establish technical foundations and compare deterministic rules with data-driven approaches |
----
+| Business Performance & Margin Improvement Diagnostic | Flagship | Business analytics, operating economics, value creation |
+| Strategic Growth & Operating Plan | Flagship | Strategy, resource allocation, execution planning |
+| AI-Enabled Business Transformation | Flagship | Process improvement, technology judgment, implementation |
+| Executive Brief Generator | Supporting Applied Technology | Applied AI workflow design, validation, evaluation |
+| Document Q&A RAG Assistant | Supporting Technical AI | Retrieval, grounding, RAG evaluation, technical fluency |
+| Support Triage System | Supporting Foundations | Python, deterministic automation, validation, testing |
 
-Workflow diagnosis, technology-opportunity identification, ROI reasoning, and prioritization remain cross-project capabilities rather than a standalone featured project.
+Flagship projects do not replace foundations practice.
 
-These capabilities should be demonstrated where relevant through the Business Performance & Margin Improvement Diagnostic, Executive Brief Generator, and other portfolio work.
+Every two to three sessions, development deliberately returns to foundations or an independent exercise.
+
+Foundations rotation:
+
+- Python
+- SQL
+- Data Analysis
+- Financial Analysis
+- Statistics
+- APIs / JSON
+- Git / Linux
+- AI Systems
 
 # Prioritization Logic
 
@@ -676,119 +690,88 @@ The important question is:
 
 # Roadmap Horizons
 
-**Current Primary Initiative:** Business Performance & Margin Improvement Diagnostic
+## Now — Business Performance + Foundations Retention
 
-The roadmap uses **Now / Next / Later** rather than fixed feature dates.
+Primary initiative:
 
-## Now — Establish Technical & Operating Foundations
-
-**Confidence: High**
-
-Primary focus:
-
-- Python foundations
-- Linux / CLI
-- Git / GitHub
-- SQL and APIs
-- deterministic product logic
-- data structures
-- functions
-- debugging
-- Support Triage System
-
-Primary outcomes:
-
-- establish core technical fluency
-- build a deterministic workflow baseline
-- connect technical learning directly to operational and product decisions
-- establish repeatable GitHub and Jira workflows
-
-Primary learning questions:
-
-- Can I independently explain the code I am writing?
-- Can I translate business rules into working logic?
-- Can I establish a baseline before using ML?
-
----
-
-## Next — Develop Data, ML & Business Evaluation Capability
-
-**Confidence: Medium-High**
-
-Primary focus:
-
-- Pandas
-- NumPy
-- data analysis
-- statistics
-- simple ML
-- model evaluation
-- error analysis
 - Business Performance & Margin Improvement Diagnostic
 
+Primary foundations:
+
+- Data Analysis
+- Python
+- Financial Analysis
+- Statistics
+- SQL
+
+Operating cadence:
+
+- cumulative review at the beginning of learning sessions
+- flagship application when it reinforces the active concept
+- dedicated foundations / exercises session every two to three sessions
+- periodic independent challenge without a supplied implementation pattern
+
 Primary outcomes:
 
-- analyze datasets
-- build simple ML baselines
-- understand model metrics
-- compare ML against deterministic approaches
-- make evidence-based technology and business recommendations
-- analyze business performance and operating economics
+- diagnose business performance using reported and calculated metrics
 - connect KPI movement to financial outcomes
-- model margin-improvement scenarios
-- compare implementation cost with expected economic value
-- prioritize initiatives based on impact, confidence, risk, and effort
+- strengthen Pandas and analytical fluency
+- build financial-statement and operating-economics literacy
+- retain prior Python and data-analysis concepts through independent exercises
 
-Primary learning questions:
+## Next — Strategy, Resource Allocation & Operating Planning
 
-- What does the data actually show?
-- Does ML improve the product?
-- Which errors matter?
-- Where can technology create enough value to justify investment?
+Primary initiative:
 
----
+- Strategic Growth & Operating Plan
 
-## Later — Build & Evaluate Advanced Technology and Business Systems
+Primary foundations:
 
-**Confidence: Medium**
+- SQL
+- Financial Analysis
+- Statistics
+- scenario modeling
+- KPI design
+- structured strategic analysis
 
-Primary focus:
+Primary outcomes:
 
-- LLM APIs
-- embeddings
-- RAG
-- context engineering
-- evaluation
-- model selection
-- tool calling
-- agents
-- AI systems
-- deployment concepts
-- monitoring
-- reliability
-- governance
+- frame ambiguous management problems
+- evaluate competing initiatives
+- quantify ROI, payback, and resource requirements
+- reason about capital, headcount, technical capacity, time, and executive attention
+- build a credible 12–24 month operating plan
+- translate analysis into an executive recommendation
 
-Primary initiatives:
+## Later — AI-Enabled Business Transformation & Advanced Technology
 
+Primary initiative:
+
+- AI-Enabled Business Transformation
+
+Supporting technical initiatives:
+
+- Executive Brief Generator
 - Document Q&A RAG Assistant
 
+Primary foundations:
+
+- APIs / JSON
+- AI Systems
+- LLM application architecture
+- evaluation
+- governance
+- implementation economics
+- monitoring and reliability concepts
+
 Primary outcomes:
 
-- evaluate generative AI quality
-- understand RAG architecture
-- compare models and configurations
-- make launch-readiness decisions
-- reason about automation boundaries, governance, and operating controls
-- understand production trade-offs
-
-Primary learning questions:
-
-- Is the system reliable enough to launch?
-- Which configuration best satisfies the requirements?
-- Where should human judgment and control remain?
-- What happens when the system fails in production?
-
----
+- diagnose workflows before selecting technology
+- compare process redesign, automation, AI, and systems interventions
+- evaluate build / buy / no-build choices
+- quantify implementation economics and risk
+- plan adoption, change management, and benefits realization
+- maintain sufficient technical depth to work effectively with engineering and data teams
 
 # Dependencies
 
@@ -998,6 +981,18 @@ Validation:
 Use public-company data or clearly labeled hypothetical data to diagnose revenue and cost drivers, model improvement initiatives, estimate implementation cost and payback, assess operational and regulatory risks, and determine whether the recommended portfolio of actions can credibly achieve the target improvement.
 
 ---
+
+### Strategic Growth & Operating Plan
+
+Validation:
+
+Use public-company data or clearly labeled hypothetical data to define a management growth or performance objective, identify competing strategic initiatives, model economics and resource requirements, assess execution risks and dependencies, prioritize the portfolio, and develop a 12–24 month operating plan.
+
+### AI-Enabled Business Transformation
+
+Validation:
+
+Select a real or clearly hypothetical business workflow, establish baseline performance and pain points, diagnose root causes, compare process redesign, automation, AI, systems integration, and organizational interventions, quantify ROI and feasibility, and produce an implementation, adoption, governance, and benefits-realization plan.
 
 # Learning Method
 

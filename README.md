@@ -304,125 +304,106 @@ Iteration
 
 # Featured Projects
 
-## 1. Executive Brief Generator
-**Type:** Flagship  
-**Status:** Complete
+The portfolio is organized around three flagship business cases and three supporting applied-technology projects.
 
-An AI-assisted operational workflow that converts messy business information into structured records and executive-ready briefs through a two-stage, human-reviewed pipeline.
+The flagship sequence reflects a practical management workflow:
 
-Current capabilities include:
+**Diagnose performance → Prioritize resources → Transform operations → Measure value**
 
-- structured extraction from unstructured operational notes
-- source-evidence preservation
-- ownership and decision-state tracking
-- dependency and approval-gate handling
-- human review between Stage 1 and Stage 2
-- executive brief generation
-- prompt versioning and promotion gates
-- defect tracking
-- targeted and broader regression testing
-- representative evaluation cases
-- browser-based frontend
-- Node.js backend
-- live API-based model execution
-- failure-state preservation and retry behavior
+## 1. Business Performance & Margin Improvement Diagnostic
 
-The project is also used to evaluate:
+**Type:** Flagship
+**Status:** In Progress
+**Primary signal:** Business analytics + operating economics + value creation
 
-- factual correctness
-- grounding quality
-- attribution accuracy
-- unsupported inference
-- decision-state preservation
-- approval integrity
-- regression behavior
-- human-in-the-loop workflow design
-- prototype-to-production trade-offs
+Diagnoses revenue, cost, margin, and operating-performance drivers; identifies credible improvement opportunities; models economics, implementation requirements, risk, and prioritization; and develops an executive recommendation.
+
+The current case uses Toast public-company data to evaluate 2023–2025 performance and margin drivers.
+
+**Core management question:**
+
+> What is happening in the business, why is it happening, and what should management do about it?
 
 ---
 
-## 2. Business Performance & Margin Improvement Diagnostic
-**Type:** Flagship  
+## 2. Strategic Growth & Operating Plan
+
+**Type:** Flagship
+**Status:** Not Started
+**Primary signal:** Strategy + resource allocation + execution planning
+
+Evaluates competing growth and operating initiatives under constraints including capital, headcount, technical capacity, time, and executive attention.
+
+**Core management question:**
+
+> Given a defined growth or performance objective and limited resources, which initiatives should management prioritize over the next 12–24 months to achieve the target?
+
+---
+
+## 3. AI-Enabled Business Transformation
+
+**Type:** Flagship
+**Status:** Not Started
+**Primary signal:** Process improvement + technology judgment + implementation
+
+Diagnoses business workflows and compares process redesign, automation, AI, systems integration, and organizational change rather than assuming AI is the answer.
+
+**Core management question:**
+
+> Which business workflows should management redesign, which interventions create sufficient value to justify implementation, and how should the transformation be executed?
+
+---
+
+# Supporting Applied Technology
+
+## 4. Executive Brief Generator
+
+**Type:** Supporting Applied Technology
+**Status:** Complete — Portfolio-Grade Prototype
+
+Demonstrates applied AI workflow design, structured extraction, controlled generation, validation, source traceability, human approval, and evaluation discipline.
+
+Its role in the portfolio is to show that technology-enabled operating improvements can be built and tested rather than only recommended.
+
+---
+
+## 5. Document Q&A RAG Assistant
+
+**Type:** Supporting Technical AI
 **Status:** In Progress
 
-A management-level business performance case study focused on diagnosing operating economics, identifying margin-improvement opportunities, quantifying financial impact, evaluating implementation risk, and recommending where management should invest.
+Demonstrates retrieval, reranking, grounding, evaluation, failure-mode analysis, and technical understanding of RAG systems.
 
-The project will use public-company financial and operating data, or clearly labeled hypothetical assumptions, to connect business-performance analysis to explicit management decisions.
-
-Planned deliverables include:
-
-- business and operating-performance baseline
-- revenue and cost-driver analysis
-- operating-margin improvement model
-- initiative-level financial impact estimates
-- implementation cost and payback analysis
-- KPI dashboard for management visibility
-- scenario and sensitivity analysis
-- prioritization framework
-- operational and regulatory risk assessment
-- executive recommendation
-
-The project is designed to demonstrate:
-
-- business judgment
-- operating economics
-- financial reasoning
-- KPI management
-- prioritization
-- trade-off analysis
-- evidence-based executive decision-making
-
-The project does not represent actual P&L ownership. It develops the analytical capabilities required to understand business performance, evaluate improvement opportunities, and make management-level recommendations.
+Its role is technical fluency rather than primary career positioning.
 
 ---
 
-## 3. Document Q&A RAG Assistant
-**Type:** Flagship  
-**Status:** In Progress
+## 6. Support Triage System
 
-A local retrieval-augmented generation prototype focused on document ingestion, semantic retrieval, reranking, evidence inspection, and retrieval-quality evaluation before answer generation.
-
-Current capabilities include:
-
-- PDF, DOCX, and TXT ingestion
-- document chunking
-- local sentence-transformer embeddings
-- ChromaDB vector storage
-- semantic candidate retrieval
-- keyword and proximity-aware reranking experiments
-- local cross-encoder reranking
-- source, page, and chunk metadata
-- controlled retrieval-quality testing
-- documented retrieval and chunk-boundary failure modes
-
-The project is also used to evaluate:
-
-- retrieval relevance
-- evidence completeness
-- reranking effectiveness
-- chunk-boundary and cross-page failure modes
-- retrieval metrics and evaluation methodology
-- latency and cost trade-offs
-- requirements for adding a future grounded answer-generation layer
-
----
-
-## 4. Support Triage System
-**Type:** Supporting  
+**Type:** Supporting Foundations / Process Automation
 **Status:** Complete
 
-A support-operations workflow that translates business rules into classification, SLA monitoring, escalation, validation, and automated testing, with later opportunities for data-driven and ML-assisted triage.
-
-Current capabilities include:
-
-- priority classification
-- SLA breach detection
-- escalation routing
-- duplicate prevention
-- reusable decision functions
-- required-field validation
-- business-value validation
-- layered input validation
-- fail-fast control flow
+Demonstrates Python foundations, deterministic business rules, validation, modularity, testing, and task-routing automation.
 
 ---
+
+# Foundations & Exercises
+
+Flagship work is intentionally alternated with foundations and independent exercises so project complexity does not outpace underlying capability.
+
+Core development areas:
+
+- Python
+- SQL
+- Data Analysis
+- Financial Analysis
+- Statistics
+- APIs / JSON
+- Git / Linux
+- AI Systems
+
+The learning cadence follows:
+
+**Learn → Exercise → Apply → Review → Independent Challenge → Return to Flagship**
+
+The portfolio is designed for immediate relevance to Business Operations, Strategy & Operations, Business Transformation, Strategic Initiatives, and AI Strategy & Operations without presenting those titles as separate professional identities.
