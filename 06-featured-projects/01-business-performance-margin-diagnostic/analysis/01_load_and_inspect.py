@@ -38,6 +38,132 @@ def main() -> None:
         df["gross_profit"] / df["total_revenue"] * 100
     )
 
+    df["sales_and_marketing_pct_revenue"] = (
+        df["sales_and_marketing"] / df["total_revenue"] * 100
+    )
+
+    df["research_and_development_pct_revenue"] = (
+        df["research_and_development"] / df["total_revenue"] * 100
+    )
+
+    df["general_and_administrative_pct_revenue"] = (
+        df["general_and_administrative"] / df["total_revenue"] * 100
+    )
+
+    df["restructuring_pct_revenue"] = (
+        df["restructuring_expense"] / df["total_revenue"] * 100
+    )
+
+    df["total_operating_expenses_pct_revenue"] = (
+        df["total_operating_expenses"] / df["total_revenue"] * 100
+    )
+
+    df["operating_margin_pct"] = (
+        df["operating_income"] / df["total_revenue"] * 100
+    )
+
+    print("\nOPERATING EXPENSES AS % OF REVENUE")
+    print(
+        df[
+            [
+                "year",
+                "sales_and_marketing_pct_revenue",
+                "research_and_development_pct_revenue",
+                "general_and_administrative_pct_revenue",
+                "restructuring_pct_revenue",
+                "total_operating_expenses_pct_revenue",
+            ]
+        ]
+    )
+
+    print("\nOPERATING MARGIN")
+    print(
+        df[
+            [
+                "year",
+                "operating_income",
+                "operating_margin_pct",
+            ]
+        ]
+    )    
+
+    operating_leverage_change_pp = {
+        "Sales & Marketing": (
+            df.loc[df["year"] == 2025, "sales_and_marketing_pct_revenue"].iloc[0]
+            - df.loc[df["year"] == 2023, "sales_and_marketing_pct_revenue"].iloc[0]
+        ),
+        "R&D": (
+            df.loc[df["year"] == 2025, "research_and_development_pct_revenue"].iloc[0]
+            - df.loc[df["year"] == 2023, "research_and_development_pct_revenue"].iloc[0]
+        ),
+        "G&A": (
+            df.loc[df["year"] == 2025, "general_and_administrative_pct_revenue"].iloc[0]
+            - df.loc[df["year"] == 2023, "general_and_administrative_pct_revenue"].iloc[0]
+        ),
+        "Total OpEx": (
+            df.loc[df["year"] == 2025, "total_operating_expenses_pct_revenue"].iloc[0]
+            - df.loc[df["year"] == 2023, "total_operating_expenses_pct_revenue"].iloc[0]
+        ),
+        "Operating Margin": (
+            df.loc[df["year"] == 2025, "operating_margin_pct"].iloc[0]
+            - df.loc[df["year"] == 2023, "operating_margin_pct"].iloc[0]
+        ),
+    }
+
+    print("\n2023 TO 2025 OPERATING LEVERAGE CHANGE")
+    for metric, change in operating_leverage_change_pp.items():
+        print(f"{metric}: {change:.2f} percentage points")
+
+    gross_margin_change_pp = (
+        df.loc[df["year"] == 2025, "gross_margin_pct"].iloc[0]
+        - df.loc[df["year"] == 2023, "gross_margin_pct"].iloc[0]
+    )
+
+    opex_leverage_contribution_pp = -(
+        df.loc[df["year"] == 2025, "total_operating_expenses_pct_revenue"].iloc[0]
+        - df.loc[df["year"] == 2023, "total_operating_expenses_pct_revenue"].iloc[0]
+    )
+
+    operating_margin_change_pp = (
+        df.loc[df["year"] == 2025, "operating_margin_pct"].iloc[0]
+        - df.loc[df["year"] == 2023, "operating_margin_pct"].iloc[0]
+    )
+
+    print("\n2023 TO 2025 OPERATING MARGIN DECOMPOSITION")
+    print(f"Gross Margin Improvement: {gross_margin_change_pp:.2f} percentage points")
+    print(f"OpEx Leverage Contribution: {opex_leverage_contribution_pp:.2f} percentage points")
+    print(f"Operating Margin Improvement: {operating_margin_change_pp:.2f} percentage points")
+    print(f"Gross Margin Share of Improvement: {gross_margin_change_pp / operating_margin_change_pp * 100:.1f}%")
+    print(f"OpEx Leverage Share of Improvement: {opex_leverage_contribution_pp / operating_margin_change_pp * 100:.1f}%")
+
+    plt.figure(figsize=(8, 5))
+
+    operating_margin_bridge = {
+        "Gross Margin\nImprovement": gross_margin_change_pp,
+        "OpEx Leverage": opex_leverage_contribution_pp,
+    }
+
+    plt.bar(
+        operating_margin_bridge.keys(),
+        operating_margin_bridge.values(),
+    )
+
+    plt.title("Drivers of Toast Operating Margin Improvement, 2023–2025")
+    plt.ylabel("Percentage Points")
+    plt.tight_layout()
+
+    operating_margin_chart_path = (
+        Path(__file__).resolve().parents[1]
+        / "deliverables"
+        / "charts"
+        / "operating_margin_improvement_drivers.png"
+    )
+
+    plt.savefig(operating_margin_chart_path)
+    plt.close()
+
+    print(f"\nOperating margin chart saved to: {operating_margin_chart_path}")
+
     print("\nGROSS PROFIT AND GROSS MARGIN")
     print(
         df[

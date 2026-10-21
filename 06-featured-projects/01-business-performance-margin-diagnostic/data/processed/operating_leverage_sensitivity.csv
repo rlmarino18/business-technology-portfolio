@@ -1,0 +1,4 @@
+scenario,opex_efficiency_improvement_pp,operating_income_improvement_m,resulting_opex_pct_revenue,resulting_operating_income_m,resulting_operating_margin_pct
+Low,0.5,30.765,20.644157321631724,322.765,5.245652527222493
+Base,1.0,61.53,20.144157321631724,353.53,5.745652527222492
+High,1.5,92.295,19.644157321631724,384.295,6.245652527222494

@@ -1,0 +1,4 @@
+scenario,gross_loss_reduction_pct,gross_profit_improvement_m,resulting_gross_profit_m,resulting_gross_margin_pct
+Low,10.0,22.0,-198.0,-110.00000000000001
+Base,20.0,44.0,-176.0,-97.77777777777777
+High,30.0,66.0,-154.0,-85.55555555555556

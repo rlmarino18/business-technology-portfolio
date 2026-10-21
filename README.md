@@ -313,7 +313,7 @@ The flagship sequence reflects a practical management workflow:
 ## 1. Business Performance & Margin Improvement Diagnostic
 
 **Type:** Flagship
-**Status:** In Progress
+**Status:** Complete
 **Primary signal:** Business analytics + operating economics + value creation
 
 Diagnoses revenue, cost, margin, and operating-performance drivers; identifies credible improvement opportunities; models economics, implementation requirements, risk, and prioritization; and develops an executive recommendation.

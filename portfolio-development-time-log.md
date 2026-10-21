@@ -39,13 +39,13 @@ Multiple sessions may be completed on the same day, and gaps between sessions do
 
 | Project | Status | Hours |
 |---|---|---:|
-| Business Performance & Margin Improvement Diagnostic | In Progress | 2.75 |
+| Business Performance & Margin Improvement Diagnostic | Complete | 5.75 |
 | Strategic Growth & Operating Plan | Not Started | 0.0 |
 | AI-Enabled Business Transformation | Not Started | 0.0 |
 | Executive Brief Generator | Complete | 45.25 |
 | Document Q&A RAG Assistant | In Progress | 3.50 |
 | Support Triage System | Complete | 7.83 |
-| **Total Portfolio Project Time** |  | **59.33** |
+| **Total Portfolio Project Time** |  | **62.33** |
 
 > Portfolio project hours represent verified time invested in building, testing, evaluating, and documenting featured projects. Some projects began before the current structured session sequence; verified historical development time is included where an existing project time log is available.
 
@@ -1488,6 +1488,77 @@ Move from descriptive margin analysis toward diagnostic analysis by decomposing 
 - identified increasing Subscription exposure and declining Hardware & Services exposure as important structural contributors
 - preserved the distinction between mathematical decomposition and causal explanation
 
+### Session 20 — Business Performance & Margin Improvement Diagnostic Completion
+
+**Date:** October 21, 2026
+**Area:** Business Analysis / Financial Modeling
+**Project:** Business Performance & Margin Improvement Diagnostic
+**Duration:** 3 hours
+
+### Objective
+
+Complete the Toast Business Performance & Margin Improvement Diagnostic by extending the analysis below gross profit, identifying and modeling credible management initiatives, prioritizing recommendations, and completing final project documentation and QA.
+
+### Work Completed
+
+- added 2023–2025 operating-expense and operating-income data
+- calculated Sales & Marketing, R&D, G&A, restructuring, and total operating expenses as percentages of revenue
+- calculated operating-margin trends
+- decomposed the 2023–2025 operating-margin improvement into gross-margin expansion and operating-expense leverage
+- determined that approximately 35.4% of operating-margin improvement came from gross-margin expansion and 64.6% from operating-expense leverage
+- identified G&A and R&D as the largest contributors to operating-expense leverage
+- created an operating-margin improvement driver chart
+- developed and evidence-qualified three management initiatives
+- modeled subscription product-adoption scenarios
+- modeled Hardware & Services gross-loss reduction scenarios
+- modeled operating-expense efficiency scenarios
+- calculated implementation-cost and payback sensitivities
+- compared initiatives by financial impact, evidence strength, execution difficulty, risk, and modeling confidence
+- prioritized the three initiatives
+- completed the executive recommendation
+- documented assumptions, limitations, and lessons learned
+- updated the project README
+- validated all analysis scripts successfully
+- marked the flagship project Complete
+
+### Technical Concepts
+
+- operating-margin analysis
+- operating-expense ratios
+- operating leverage
+- scenario modeling
+- sensitivity analysis
+- payback-period calculation
+- financial-model reconciliation
+- Pandas DataFrame modeling
+- CSV output generation
+- reproducible analytical scripts
+- management-oriented visualization
+
+### Analytical Concepts
+
+- gross-margin versus operating-expense contribution
+- operating-leverage decomposition
+- improvement-pool sizing
+- decision thresholds
+- base / low / high sensitivity cases
+- reported data versus calculated metrics
+- assumptions versus forecasts
+- evidence strength and modeling confidence
+- financial attractiveness versus strategic feasibility
+
+### Business & Product Application
+
+- determined that Toast's operating margin improved from -7.43% in 2023 to 4.75% in 2025
+- quantified total operating-margin improvement at approximately 12.17 percentage points
+- attributed approximately 7.86 percentage points of improvement to operating-expense leverage
+- prioritized preserving operating leverage as the highest-confidence management initiative
+- modeled a 1.0 percentage-point OpEx efficiency improvement at approximately $61.5M of annual operating-income benefit
+- modeled a 5% subscription-revenue-per-location uplift at approximately $33.6M of incremental annual gross profit
+- modeled a 20% Hardware & Services gross-loss reduction at approximately $44M of annual gross-profit improvement
+- preserved the distinction between attractive modeled economics and uncertain real-world attainability
+- concluded that management should combine operating discipline, higher-margin recurring-revenue growth, and selective improvement of structurally weak unit economics
+
 # Actual Time by Week
 
 ## Week Ending September 27, 2026
@@ -1529,6 +1600,13 @@ Move from descriptive margin analysis toward diagnostic analysis by decomposing 
 |---|---:|
 | Executive Brief Generator Completion & Validation | 0.75 |
 | Data Analysis / Business Performance Diagnostic | 2.25 |
+| **Total Focused Time** | **3.00** |
+
+## Week Ending October 25, 2026
+
+| Activity | Hours |
+|---|---:|
+| Business Performance Diagnostic Completion | 3.00 |
 | **Total Focused Time** | **3.00** |
 
 > Portfolio project hours overlap with technical-learning hours and are therefore tracked separately rather than added again to the weekly total.

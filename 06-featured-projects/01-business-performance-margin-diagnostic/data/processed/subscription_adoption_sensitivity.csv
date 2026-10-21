@@ -1,0 +1,4 @@
+scenario,revenue_per_location_uplift_pct,incremental_subscription_revenue_m,incremental_gross_profit_m
+Low,2.0,18.72,13.44
+Base,5.0,46.800000000000004,33.6
+High,8.0,74.88,53.76
