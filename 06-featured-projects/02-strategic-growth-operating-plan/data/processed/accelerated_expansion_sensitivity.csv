@@ -1,0 +1,4 @@
+scenario,incremental_restaurants,mature_annual_revenue_m,year_one_revenue_m,year_one_restaurant_profit_m,mature_restaurant_profit_m,capex_m,pre_opening_cost_m,total_initial_investment_m,mature_payback_years
+Low,10,31.0,15.5,3.627,7.254,22.0,2.6500000000000004,24.65,3.398125172318721
+Base,20,62.0,31.0,7.254,14.508,44.0,5.300000000000001,49.3,3.398125172318721
+High,30,93.0,46.5,10.880999999999998,21.761999999999997,66.0,7.95,73.95,3.3981251723187214

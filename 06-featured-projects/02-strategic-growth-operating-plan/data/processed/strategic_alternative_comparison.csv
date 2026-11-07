@@ -1,0 +1,4 @@
+alternative,base_case_assumption,incremental_revenue_m,incremental_profit_m,known_initial_investment_m,payback_years,primary_value,capital_intensity,execution_risk,time_to_value
+Accelerated Expansion,20 incremental restaurants,62.0,14.508,49.3,3.398125172318721,Footprint and revenue growth,High,High,Medium
+Same-Store Productivity,3% productivity uplift,46.5,10.880999999999998,,,Existing-store productivity,Unknown,Medium,Medium
+Scalable Infrastructure,0.50 pp efficiency improvement,,5.8465,,,Organizational scalability,Unknown,Medium,Long

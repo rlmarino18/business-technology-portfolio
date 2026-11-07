@@ -1,0 +1,4 @@
+scenario,efficiency_improvement_pp,baseline_revenue_m,illustrative_operating_income_m
+Low,0.25,1169.3,2.92325
+Base,0.5,1169.3,5.8465
+High,0.75,1169.3,8.769749999999998

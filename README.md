@@ -329,14 +329,16 @@ The current case uses Toast public-company data to evaluate 2023–2025 performa
 ## 2. Strategic Growth & Operating Plan
 
 **Type:** Flagship
-**Status:** Not Started
+**Status:** Complete
 **Primary signal:** Strategy + resource allocation + execution planning
 
-Evaluates competing growth and operating initiatives under constraints including capital, headcount, technical capacity, time, and executive attention.
+Uses CAVA public-company data to evaluate how management should balance restaurant expansion, same-store productivity, and scalable infrastructure over the next 12–24 months.
+
+The project includes scenario modeling, capital-allocation trade-offs, prioritization analysis, and a phased operating plan designed to preserve growth while protecting unit economics and organizational capacity.
 
 **Core management question:**
 
-> Given a defined growth or performance objective and limited resources, which initiatives should management prioritize over the next 12–24 months to achieve the target?
+> How should CAVA allocate capital and organizational capacity over the next 12–24 months to maximize growth while preserving restaurant-level economics?
 
 ---
 
